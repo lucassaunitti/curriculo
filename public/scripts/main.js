@@ -4,8 +4,15 @@
 $(document).ready(function() {
   AOS.init( {
     // uncomment below for on-scroll animations to played only once
-    // once: true  
+    // once: true
   }); // initialize animate on scroll library
+});
+
+$(".nav-item")
+.click(function(event) {
+  if (screen.width <= 600){
+    $("#button-menu").click();
+  }
 });
 
 // Smooth scroll for links with hashes
@@ -13,8 +20,8 @@ $('a.smooth-scroll')
 .click(function(event) {
   // On-page links
   if (
-    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-    && 
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
     location.hostname == this.hostname
   ) {
     // Figure out element to scroll to
