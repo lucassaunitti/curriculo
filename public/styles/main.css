@@ -7231,7 +7231,8 @@ Created using IcoMoon - icomoon.io
 
 .cc-contact-information .cc-contact {
   /* padding: 8% 0 8% 20%; */
-  padding: 8% 0 8% 0%;
+  /* padding: 8% 0 8% 0%; */
+  padding: 8%;
 }
 
 @media (max-width: 767px) {
